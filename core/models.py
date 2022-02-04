@@ -17,6 +17,8 @@ class Profile(models.Model):
         return str(self.user)
 
 
+
+
 class Post(models.Model):
     user = models.ForeignKey(User, related_name="posts", on_delete=models.CASCADE)
     caption = models.TextField(blank=True)
